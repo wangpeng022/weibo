@@ -1,0 +1,212 @@
+/*body & 左导航栏*/
+html body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background:url("../images/body.jpg") no-repeat top center,#1F160E;
+}
+/* 整个大盒子*/
+.leftBox{
+    position: relative;
+    left: 176px;
+    top: 15px;
+    width: 150px;
+    height: 485px;
+    font-size: 16px;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.2);
+}
+/*给所有a标签添加样式*/
+.leftBox .firBox .arti a,.leftBox {
+    font-size: 14px;
+    padding: 0 0 0 15px;
+    line-height: 35px;
+    color: whitesmoke;
+}
+/*给所有i标签(小红点）添加样式*/
+.leftBox .firBox .arti i{
+    float: right;
+    margin: 12px 8px 0 0;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fa7d3c;
+    overflow: hidden;
+}
+.leftBox .firBox .arti .sign{
+    font-size: 15px;
+}
+.leftBox .firBox .arti .text{
+    font-size: 12px;
+}
+/*给所有h3标签添加样式  h3下包含着a,span,i ,可以实现鼠标滑过变色*/
+.leftBox .firBox .arti:hover{
+    background-color:rgba(245,245,245,0.5);
+    cursor: pointer;
+}
+/*直线间隔*/
+.leftBox .secBox {
+    margin-top: 10px;
+    width: 150px;
+    height: 12px;
+}
+.leftBox .secBox fieldset{
+    display: block;
+    height: 22px;
+    border-color: rgba(255,255,255,0.1);
+    border-style: solid;
+    border-width: 2px 0 0 0;
+}
+
+
+.leftBox .box3 fieldset{
+    display: block;
+    height: 22px;
+    /*margin-top: 10px;*/
+    padding: 0 0 0 120px;
+    border-color: rgba(255,255,255,0.1);
+    border-style: solid;
+    border-width: 2px 0 0 0;
+}
+.leftBox .box3 fieldset .sign{
+    font-size: 14px;
+
+    line-height: 35px;
+    color: whitesmoke;
+}
+
+/*图标字体*/
+@font-face{
+    font-family: 'wbficon';
+    src: url('../fonts/wbficon.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/wbficon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/wbficon.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/wbficon.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/wbficon.svg#wbficon') format('svg'); /* Legacy iOS */
+}
+[class^='icon_'],[class*='icon_']{
+    font-family: wbficon;
+    font-weight:normal;
+    font-style:normal;
+    /*解决图标字体出现锯齿 不清晰*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*图标字体大小*/
+.icon_comment{
+    font-size: 23px;
+}
+/*设置导航栏鼠标滑过效果*/
+.nav .nav_tab a,.nav .search_input a{
+    color: #333;
+}
+.nav .nav_tab a:hover {
+    color: #FA7D3C  ;
+}
+.nav .search_input a:hover{
+    color: #FA7D3C  ;
+}
+/*一条横线*/
+.line{
+    width: 100%;
+    height: 2px;
+    background: #FA7D3C;
+}
+/*头部导航，整行*/
+.nav{
+    width: 100%;
+    height: 48px;
+    background: #F2F1F1;
+}
+/*导航开始，logo*/
+.nav .icon a{
+    display: block;
+    float: left;
+    width: 190px;
+    height: 48px;
+}
+.nav .icon a i{
+    display: inline-block;
+    float: right;
+    width: 140px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background: url("../images/logo.png") no-repeat center center ;
+}
+/*导航里，搜索栏*/
+.nav .search_input{
+    display: block;
+    margin-top: 10px;
+    float: left;
+    width: 35%;
+    height: 28px;
+    text-align: center;
+    border: 1px solid orangered;
+}
+.nav .search_input input{
+    width:90%;
+    height: 24px;
+    white-space: nowrap;
+    border: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #F2F1F1;
+    color: rgba(160, 160, 192, 0.64);
+}
+.nav .search_input i{
+    margin: 3px 3px 0 0 ;
+    float: right;
+    font-size: 20px;
+}
+/*导航栏-右侧tab*/
+.nav .nav_tab{
+    margin: 10px 0;
+    float: right;
+    width: 45%;
+    height: 28px;
+}
+.nav .nav_tab i,.nav .nav_tab span{
+    display: block;
+    margin: 2px 0;
+    float: left;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+.nav .nav_tab span{
+    margin-right: 20px;
+    font-size: 15px;
+    width: 35px;
+}
+.nav_tab .nav_set{
+    float: left;
+    width: 160px;
+    height: 28px;
+    border-left: 1px solid #d9d9d9;
+    line-height: 28px;
+    text-align: center;
+}
+.nav_tab .nav_set i {
+    margin-left: 20px;
+}
+/*换肤小方块*/
+.theme{
+    position: absolute;
+    top: 48px;
+    right:0;
+    width: 42px;
+    height: 44px;
+    cursor: pointer;
+    background: url("../images/icon.png") center center;
+    background-position: -150px -200px;
+}
+.theme:hover{
+    background-position: -150px -275px;
+
+}
+
+
+
